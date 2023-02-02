@@ -33,9 +33,11 @@ if letter == word[4]:
     print(letter + " found at index 4")
     letter_count = letter_count + 1
 
+
 if letter_count != 0:
-    print(str(letter_count) + " instances of " + letter + " found in " + word) 
+    if letter_count == 1: 
+        print(str(letter_count) + " instance of " + letter + " found in " + word)
+    else:
+        print(str(letter_count) + " instances of " + letter + " found in " + word) 
 if letter_count == 0: 
     print("No instances of " + letter + " found in " + word)
-
-
