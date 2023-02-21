@@ -9,7 +9,7 @@ result: str = ""
 alt_index: int = 0
 
 while len(guess) != len(secret_word):
-    guess: str = input(f"That was not {len(secret_word)} letters! Try again: ")
+    guess = input(f"That was not {len(secret_word)} letters! Try again: ")
 
 if len(guess) == len(secret_word) and guess != secret_word:
 
